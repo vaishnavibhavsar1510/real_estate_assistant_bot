@@ -1,4 +1,4 @@
-# PropertyLoop - Real Estate Assistant
+# ♾️ PropertyLoop - Real Estate Assistant
 
 A sophisticated AI-powered real estate assistant that helps identify and analyze property issues using image processing and natural language understanding.
 
