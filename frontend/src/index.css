@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #F0F4F8;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1E4D8C;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #153761;
+}
+
+/* Smooth transitions */
+* {
+  transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Message animations */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.message-bubble {
+  animation: slideIn 0.3s ease forwards;
+}
+
+/* Loading animation */
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+}
+
+.loading-dot {
+  animation: pulse 1.5s infinite;
+}
+
+.app-title {
+  background: linear-gradient(45deg, #1E4D8C 30%, #2E6BC4 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.infinity-icon {
+  background: linear-gradient(45deg, #1E4D8C 30%, #2E6BC4 90%);
+  border-radius: 50%;
+  padding: 8px;
+  color: white;
+  box-shadow: 0 4px 12px rgba(30, 77, 140, 0.2);
+  margin-right: 8px;
+}
+
+.chat-container {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.chat-container:hover {
+  box-shadow: 0 8px 24px rgba(30, 77, 140, 0.08);
+}
+
+.upload-area {
+  border: 2px dashed rgba(30, 77, 140, 0.2);
+  border-radius: 16px;
+  padding: 24px;
+  text-align: center;
+  cursor: pointer;
+  background-color: white;
+  transition: all 0.2s ease;
+}
+
+.upload-area:hover {
+  border-color: #1E4D8C;
+  background-color: rgba(30, 77, 140, 0.02);
+  box-shadow: 0 4px 12px rgba(30, 77, 140, 0.08);
+}
+
+.send-button {
+  background: linear-gradient(45deg, #1E4D8C 30%, #2E6BC4 90%);
+  border-radius: 12px;
+  text-transform: none;
+  font-weight: 600;
+  box-shadow: none;
+  transition: all 0.2s ease;
+}
+
+.send-button:hover {
+  background: linear-gradient(45deg, #153761 30%, #1E4D8C 90%);
+  box-shadow: 0 4px 12px rgba(30, 77, 140, 0.2);
+}
