@@ -113,6 +113,7 @@ uvicorn main:app --reload --port 8000
 3. **Frontend Setup**
 ```bash
 cd frontend
+touch .env  #Optional, just to setup ports
 npm install
 npm start
 ```
