@@ -104,7 +104,7 @@ cd real_estate_assistant_bot
 2. **Backend Setup**
 ```bash
 cd backend
-touch .env   #Add all the API keys here Of Cloudinary, OpenAI, etc.
+touch .env   #Add all the API keys here Of Cloudinary, OpenAI, MongoDB.
 pip install -r requirements.txt
 # Configure environment variables (see .env.example)
 uvicorn main:app --reload --port 8000
