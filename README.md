@@ -114,7 +114,7 @@ uvicorn main:app --reload --port 8000
 ```bash
 cd frontend
 touch .env  #Optional, just to setup ports
-npm install
+npm install --legacy-peer-deps
 npm start
 ```
 
