@@ -104,6 +104,7 @@ cd real_estate_assistant_bot
 2. **Backend Setup**
 ```bash
 cd backend
+touch .env   #Add all the API keys here Of Cloudinary, OpenAI, etc.
 pip install -r requirements.txt
 # Configure environment variables (see .env.example)
 uvicorn main:app --reload --port 8000
@@ -123,6 +124,11 @@ DATABASE_URL=postgresql://user:password@localhost/db_name
 CLOUDINARY_CLOUD_NAME=your_cloud_name
 CLOUDINARY_API_KEY=your_api_key
 CLOUDINARY_API_SECRET=your_api_secret
+```
+Create a `.env` file in the frontend directory (Optional):
+```
+PORT=3001
+REACT_APP_API_URL=http://localhost:8000 
 ```
 
 ## 🌐 Deployment
