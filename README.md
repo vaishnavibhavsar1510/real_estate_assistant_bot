@@ -13,7 +13,7 @@ A sophisticated AI-powered real estate assistant that helps identify and analyze
 ### Backend
 - FastAPI (Python) for high-performance API
 - CLIP (Contrastive Language-Image Pre-Training) for image analysis
-- PostgreSQL for data persistence
+- MongoDB for data persistence
 - Cloudinary for image storage
 - Uvicorn as ASGI server
 
