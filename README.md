@@ -90,7 +90,7 @@ The system uses OpenAI's CLIP model for advanced image analysis:
 - Python 3.8+
 - Node.js 14+
 - MongoDB (Atlas or Compass any)
-- Cloudinary account
+- Cloudinary account (Link: https://tinyurl.com/ypwpdu37)
 - VectorDB
 
 ### Installation
